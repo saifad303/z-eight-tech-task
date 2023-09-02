@@ -62,7 +62,7 @@ const Hero = () => {
               </li>
             ))}
           </ul>
-          <div className="pt-7 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex lg:justify-start">
+          <div className="pt-7 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex sm:justify-start max-w-xl  sm:mx-auto lg:ml-0">
             <a
               href=""
               className="px-7 py-3 w-full bg-[#55C360] text-white font-medium text-center rounded-md shadow-md block sm:w-auto"
@@ -74,7 +74,7 @@ const Hero = () => {
         <div className="flex-1 text-center mt-7 lg:mt-0 lg:ml-3">
           <img
             src={heroImg}
-            className="w-full mx-auto sm:w-10/12  lg:w-[90%]"
+            className="w-full mx-auto sm:w-[80%] md:w-[70%] lmd:w-[60%] lg:w-[90%] "
           />
         </div>
       </section>
