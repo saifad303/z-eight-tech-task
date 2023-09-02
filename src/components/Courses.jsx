@@ -2,42 +2,27 @@ import React from "react";
 import { BsBook, BsStopwatch, BsPerson, BsCameraVideo } from "react-icons/bs";
 
 const Courses = () => {
-  const posts = [
+  const cards = [
     {
-      title: "What is SaaS? Software as a Service Explained",
-      desc: "Going into this journey, I had a standard therapy regimen, based on looking at the research literature. After I saw the movie, I started to ask other people what they did for their anxiety, and some",
-      img: "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      authorLogo: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
-      authorName: "Sidi dev",
-      date: "Jan 4 2022",
-      href: "",
+      title: "The Ultimate SEO training 2023 + SEO for wordpress",
+      img: "https://i.pinimg.com/564x/43/f1/60/43f1601a846ba56fbed07db942c852f7.jpg",
+      authorName: "Saif Ahmed",
     },
     {
-      title: "A Quick Guide to WordPress Hosting",
-      desc: "According to him, â€œI'm still surprised that this has happened. But we are surprised because we are so surprised.â€More revelations about Whittington will be featured in the film",
-      img: "https://images.unsplash.com/photo-1620287341056-49a2f1ab2fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      authorLogo: "https://api.uifaces.co/our-content/donated/FJkauyEa.jpg",
-      authorName: "Micheal",
-      date: "Jan 4 2022",
-      href: "",
+      title: "Google digital marketing & E-commerce pro certificate",
+      img: "https://i.pinimg.com/564x/eb/75/b1/eb75b12bf1160d6d6c27fdd9d6231e5b.jpg",
+      authorName: "Rashid Udding",
     },
     {
-      title: "7 Promising VS Code Extensions Introduced in 2022",
-      desc: "I hope I remembered all the stuff that they needed to know. They're like, 'okay,' and write it in their little reading notebooks. I realized today that I have all this stuff that",
-      img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      authorLogo: "https://randomuser.me/api/portraits/men/46.jpg",
-      authorName: "Luis",
-      date: "Jan 4 2022",
-      href: "",
+      title: "IBM Data analyst professional certificate",
+      img: "https://i.pinimg.com/564x/fd/74/5a/fd745a9e81eb12b5d2ba4f91fb792bf5.jpg",
+      authorName: "Luis Fonsi",
     },
     {
-      title: "How to Use Root C++ Interpreter",
-      desc: "The powerful gravity waves resulting from the impact of the planets' moons â€” four in total â€” were finally resolved in 2015 when gravitational microlensing was used to observe the",
-      img: "https://images.unsplash.com/photo-1617529497471-9218633199c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      authorLogo: "https://api.uifaces.co/our-content/donated/KtCFjlD4.jpg",
-      authorName: "Lourin",
-      date: "Jan 4 2022",
-      href: "",
+      title: "Machine learning specialization",
+      img: "https://i.pinimg.com/564x/ee/93/35/ee9335a863d33c9fb59fa9930711f1fd.jpg",
+      authorImg: "https://api.uifaces.co/our-content/donated/KtCFjlD4.jpg",
+      authorName: "Anonymous",
     },
   ];
 
@@ -54,12 +39,12 @@ const Courses = () => {
         </p>
       </div>
       <div className="mt-12 grid gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {posts.map((items, key) => (
+        {cards.map((items, key) => (
           <article
             className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm p-3"
             key={key}
           >
-            <a href={items.href}>
+            <a href="">
               <img
                 src={items.img}
                 loading="lazy"
@@ -70,7 +55,7 @@ const Courses = () => {
                 <div className=" flex items-center w-full">
                   <div className="flex-none w-10 h-10 rounded-full border border-[#55C360]">
                     <img
-                      src={items.authorLogo}
+                      src="https://i.pinimg.com/564x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg"
                       className="w-full h-full rounded-full"
                       alt={items.authorName}
                     />
@@ -87,9 +72,9 @@ const Courses = () => {
                       version="1.1"
                       id="Capa_1"
                       xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
                       viewBox="0 0 47.94 47.94"
-                      xml:space="preserve"
+                      xmlSpace="preserve"
                     >
                       <path
                         fill="#ED8A19"

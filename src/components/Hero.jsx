@@ -6,6 +6,7 @@ const Hero = () => {
   const navigation = [
     { title: "Home", path: "" },
     { title: "Courses", path: "" },
+    { title: "Contact Us", path: "" },
   ];
 
   const features = [
@@ -19,7 +20,12 @@ const Hero = () => {
       <header>
         <nav className="items-center pt-5 px-4 mx-auto max-w-screen-xl sm:px-8 sm:flex sm:space-x-6">
           <a href="">
-            <img src={siteLogo} width={120} height={50} alt="Float UI logo" />
+            <img
+              src="https://z8tech.dev/wp-content/uploads/2022/11/tras_ZL-01-removebg-preview.png"
+              width={120}
+              height={50}
+              alt="Float UI logo"
+            />
           </a>
           <ul className="py-4 flex-1 items-center flex space-x-3 sm:space-x-6 sm:justify-end">
             {navigation.map((item, idx) => (
