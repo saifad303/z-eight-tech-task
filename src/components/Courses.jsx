@@ -2,6 +2,7 @@ import React from "react";
 import { BsBook, BsStopwatch, BsPerson, BsCameraVideo } from "react-icons/bs";
 
 const Courses = () => {
+  /* array to iterate card items */
   const cards = [
     {
       title: "The Ultimate SEO training 2023 + SEO for wordpress",
@@ -28,6 +29,7 @@ const Courses = () => {
 
   return (
     <section className="mt-12 mx-auto px-4 max-w-screen-xl md:px-8 mb-9">
+      {/* header section of course start */}
       <div className="text-center">
         <h1 className="text-3xl text-gray-800 font-semibold capitalize">
           Discover our popular courses
@@ -38,7 +40,10 @@ const Courses = () => {
           eos. Deserunt earum nisi cumque rem fugit.
         </p>
       </div>
+      {/* header section of course end */}
+
       <div className="mt-12 grid gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {/* card content start */}
         {cards.map((items, key) => (
           <article
             className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm p-3"
@@ -129,6 +134,7 @@ const Courses = () => {
             </a>
           </article>
         ))}
+        {/* card content end */}
       </div>
     </section>
   );

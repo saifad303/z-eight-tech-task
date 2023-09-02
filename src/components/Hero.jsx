@@ -1,14 +1,15 @@
 import React from "react";
 import heroImg from "/images/hero-person.png";
-import siteLogo from "/images/main-logo.png";
 
 const Hero = () => {
+  // arrays to iterate menu items
   const navigation = [
     { title: "Home", path: "" },
     { title: "Courses", path: "" },
     { title: "Contact Us", path: "" },
   ];
 
+  // array to iterate feature items
   const features = [
     "30 days free trail.",
     "Personalized onboarding.",
@@ -17,6 +18,7 @@ const Hero = () => {
 
   return (
     <div className="bg-[#F8FDF9]">
+      {/* Header start */}
       <header>
         <nav className="items-center pt-5 px-4 mx-auto max-w-screen-xl sm:px-8 sm:flex sm:space-x-6">
           <a href="">
@@ -36,7 +38,10 @@ const Hero = () => {
           </ul>
         </nav>
       </header>
+      {/* Header end */}
+
       <section className=" mt-14 mx-auto max-w-screen-xl pb-12 px-4 items-center lg:flex md:px-8">
+        {/* left part hero section start */}
         <div className="space-y-4 flex-1 sm:text-left lg:text-left">
           <h1 className="text-slate-700 font-semibold text-4xl xl:text-[42px] max-w-xl  sm:mx-auto lg:ml-0">
             Join Us To Get Your Dream
@@ -77,12 +82,15 @@ const Hero = () => {
             </a>
           </div>
         </div>
+
+        {/* right part hero section start */}
         <div className="flex-1 text-center mt-7 lg:mt-0 lg:ml-3">
           <img
             src={heroImg}
             className="w-full mx-auto sm:w-[80%] md:w-[70%] lmd:w-[60%] lg:w-[90%] "
           />
         </div>
+        {/* right part hero section end */}
       </section>
     </div>
   );
